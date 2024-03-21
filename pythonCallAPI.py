@@ -10,5 +10,6 @@ if r.status_code == 200:
         print(r_json)
     else:
         print("The response is empty.")
+# if request failed return error code and description
 else:
     print(f"Request failed with status code {r.status_code}. Response: {r.text}")
